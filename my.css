@@ -1,0 +1,28 @@
+body {
+  background: grey;
+  padding: 10px;
+  font-family: Helvetica;
+}
+
+#campo {
+  position: relative;
+  background: #fff;
+  border-radius: 4px;
+  transition: all 0.2s;
+  margin: 0 auto;
+  width: 90%;
+  height: 90vh;
+  background-size: 10px 10px;
+  background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+
+}
+
+#pedina {
+  background: red;
+  border: none;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: red;
+} 
