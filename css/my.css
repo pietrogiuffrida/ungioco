@@ -4,14 +4,20 @@ body {
   font-family: Helvetica;
 }
 
+#kinput {
+  border: 1px solid black;
+  width: 10px;
+  height: 10px;
+}
+
+
 #campo {
   position: relative;
   background: #fff;
   border-radius: 4px;
-  transition: all 0.2s;
   margin: 0 auto;
-  width: 90%;
-  height: 90vh;
+  width: 750px;
+  height: 500px;
   background-size: 10px 10px;
   background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
 
@@ -25,4 +31,27 @@ body {
   height: 20px;
   position: absolute;
   background-color: red;
-} 
+}
+
+.brick {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: black;
+}
+
+.blue {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #CAE6B5;
+}
+
+#animate {
+  top: 20px;
+  left: 60px;
+  width: 20px;
+  height: 40px;
+  position: absolute;
+  background: black;
+}
