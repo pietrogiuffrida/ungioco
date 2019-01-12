@@ -18,7 +18,12 @@ function goto(direction){
     p_left = p_l
     p_top = p_t
 
-    tail(pedina.style.top, pedina.style.left)
+    if (maketail == true){
+      tail(pedina.style.top, pedina.style.left)
+    } else if (makebrick == true){
+      tail(pedina.style.top, pedina.style.left, "black")
+    }
+
 
     pedina.style.left = p_left + "px"
     pedina.style.top = p_top + "px"
@@ -27,10 +32,11 @@ function goto(direction){
 };
 
 
-function tail(x, y){
+function tail(x, y, color_class="blue"){
   id = 'brick' + x + 'X' + y
-  div = '<div class="brick blue" id="' + id + '"></div>'
+  div = '<div class="brick" id="' + id + '"></div>'
   campo.append(div)
+  $("#" + id).addClass(color_class)
   $("#" + id)[0].style.top = x
   $("#" + id)[0].style.left = y
 }
